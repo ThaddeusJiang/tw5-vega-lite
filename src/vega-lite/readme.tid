@@ -6,6 +6,10 @@ tags: $:/plugins/ThaddeusJiang/vega-lite
 
 A plugin for [[TiddlyWiki|http://tiddlywiki.com/]] to render [[Vega-Lite|https://vega.github.io/vega-lite/]] charts.
 
+!! Demo
+
+https://tw5-vega-lite.vercel.app/
+
 !! Installation
 
 Drag and drop the following tiddlers into your wiki: <<tag $:/plugins/ThaddeusJiang/vega-lite>>
