@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/ThaddeusJiang/vega-lite",
+  "name": "vega-lite",
+  "author": "ThaddeusJiang",
+  "description": "vega-lite in TiddlyWiki",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": ["readme"]
+}
