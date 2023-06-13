@@ -6,4 +6,4 @@
 
 ## usage
 
-see [details](https://tw5-vega-lite.vercel.app)
+[![Manual](https://i.imgur.com/d0we6Oj.gif)](https://tw5-vega-lite.vercel.app)
