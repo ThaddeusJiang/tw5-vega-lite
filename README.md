@@ -3,5 +3,7 @@
 ## features
 
 - [x] show vega-lite chart in TiddlyWiki
-- [ ] beautiful chart
 
+## usage
+
+see [details](https://tw5-vega-lite.vercel.app)
