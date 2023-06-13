@@ -1,0 +1,16 @@
+[
+    {
+        "title": "$:/plugins/ThaddeusJiang/vega-lite",
+        "name": "vega-lite",
+        "author": "ThaddeusJiang",
+        "description": "vega-lite in TiddlyWiki",
+        "plugin-type": "plugin",
+        "version": "0.0.1",
+        "list": "readme",
+        "dependents": "",
+        "type": "application/json",
+        "Modern.TiddlyDev#SHA256-Hashed": "f09de2e00b2add06c2a19c76025b9dc53a3baec1250fa4bdd0f7c8c0ad976bc5",
+        "readme": "! vega-lite\n\nvega-lite in TiddlyWiki",
+        "requires-reload": "yes"
+    }
+]
