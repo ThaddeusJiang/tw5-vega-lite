@@ -2,6 +2,30 @@ title: $:/plugins/ThaddeusJiang/vega-lite/readme
 type: text/vnd.tiddlywiki
 tags: $:/plugins/ThaddeusJiang/vega-lite
 
-! vega-lite
+! tw5-vega-lite
 
-vega-lite in TiddlyWiki
+A plugin for [[TiddlyWiki|http://tiddlywiki.com/]] to render [[Vega-Lite|https://vega.github.io/vega-lite/]] charts.
+
+!! Installation
+
+Drag and drop the following tiddlers into your wiki: <<tag $:/plugins/ThaddeusJiang/vega-lite>>
+
+!! Usage
+
+!!! 1. prepare vega-lite spec in json file
+
+[[seattle-weather.json]]
+
+!!! 2. widget
+
+```wikitext
+<$vega-lite spec="seattle-weather.json" />
+```
+
+!!! 3. result
+
+<$vega-lite spec="seattle-weather.json" />
+
+!! Links
+
+* [[Open Source|https://github.com/ThaddeusJiang/tw5-vega-lite]]

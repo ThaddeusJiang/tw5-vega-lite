@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "width": 200,
+  "width": 480,
   "height": 150,
   "padding": 5,
+  "title": "Simple Bar Chart",
   "data": [
     {
       "name": "table",
@@ -30,11 +31,10 @@
   ],
   "scales": [
     {
-      "name": "scalePosition",
-      "type": "linear",
+      "name": "scaleIndex",
+      "type": "band",
       "range": "width",
-      "domain": {"data": "table", "field": "position"},
-      "zero": false
+      "domain": {"data": "table", "field": "index"}
     },
     {
       "name": "scaleValue",
@@ -43,38 +43,25 @@
       "domain": {"data": "table", "field": "value"},
       "zero": true,
       "nice": true
-    },
-    {
-      "name": "colorCategory",
-      "type": "ordinal",
-      "range": "category",
-      "domain": {"data": "table", "field": "category"}
     }
   ],
   "axes": [
     {"orient": "left", "scale": "scaleValue", "title": "Value"},
-    {"orient": "bottom", "scale": "scalePosition", "title": "Position"}
+    {"orient": "bottom", "scale": "scaleIndex", "title": "Index"}
   ],
   "marks": [
     {
-      "type": "group",
-      "from": {
-        "facet": {"name": "series", "groupby": "category", "data": "table"}
-      },
-      "marks": [
-        {
-          "type": "line",
-          "from": {"data": "series"},
-          "encode": {
-            "enter": {
-              "x": {"scale": "scalePosition", "field": "position"},
-              "y": {"scale": "scaleValue", "field": "value"},
-              "stroke": {"scale": "colorCategory", "field": "category"},
-              "tooltip": {"signal": "datum"}
-            }
-          }
+      "type": "rect",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "scaleIndex", "field": "index", "offset": 1},
+          "width": {"scale": "scaleIndex", "band": 1, "offset": -1},
+          "y": {"scale": "scaleValue", "field": "value"},
+          "y2": {"scale": "scaleValue", "value": 0},
+          "tooltip": {"scale": "scaleValue", "field": "value"}
         }
-      ]
+      }
     }
   ]
 }

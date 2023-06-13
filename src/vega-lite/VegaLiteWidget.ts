@@ -22,11 +22,12 @@ class VegaLiteWidget extends Widget {
     this.domNodes.push(parent.appendChild(containerElement));
 
     const tid = this.getAttribute('spec', '');
+    const spec = JSON.parse(this.wiki.getTiddler(tid)?.fields?.text);
 
-    const spec = JSON.parse(this.wiki.getTiddler(tid).fields.text);
+    const theme: any = this.getAttribute('theme', 'quartz');
 
-    vegaEmbed(`#${id}`, spec);
+    vegaEmbed(`#${id}`, spec, { theme }).catch(console.error);
   }
 }
 
-exports["vega-lite"] = VegaLiteWidget;
+exports['vega-lite'] = VegaLiteWidget;

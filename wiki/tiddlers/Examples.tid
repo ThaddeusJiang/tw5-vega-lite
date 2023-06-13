@@ -1,0 +1,17 @@
+created: 20230613051020966
+modified: 20230613112741722
+tags: 
+title: Examples
+type: text/vnd.tiddlywiki
+
+<$vega-lite spec="simple-bar-chart.json" />
+
+<$vega-lite spec="line-chart.json" theme="dark" />
+
+<$vega-lite spec="pie-chart.json" />
+
+<$vega-lite spec="composed-bar-chart.json" />
+
+<$vega-lite spec="seattle-weather.json" />
+
+<$vega-lite spec="us-10m.json"  />
