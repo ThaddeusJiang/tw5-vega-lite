@@ -21,8 +21,7 @@ class VegaLiteWidget extends Widget {
     containerElement.setAttribute('id', id);
     this.domNodes.push(parent.appendChild(containerElement));
 
-    const tid = this.getAttribute('spec', '');
-    const spec = JSON.parse(this.wiki.getTiddler(tid)?.fields?.text);
+    const spec = JSON.parse(this.getAttribute('spec', ''));
 
     const theme: any = this.getAttribute('theme', 'quartz');
 
