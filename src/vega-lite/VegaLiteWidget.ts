@@ -21,12 +21,13 @@ class VegaLiteWidget extends Widget {
     containerElement.setAttribute('id', id);
     this.domNodes.push(parent.appendChild(containerElement));
 
-    const tid = this.getAttribute('spec', '');
-    const spec = JSON.parse(this.wiki.getTiddler(tid)?.fields?.text);
-
     const theme: any = this.getAttribute('theme', 'quartz');
-
-    vegaEmbed(`#${id}`, spec, { theme }).catch(console.error);
+    try {
+      const spec = JSON.parse(this.getAttribute('spec', ''));
+      vegaEmbed(`#${id}`, spec, { theme }).catch(console.error);
+    } catch(e) {
+      console.error(e);
+    }
   }
 }
 

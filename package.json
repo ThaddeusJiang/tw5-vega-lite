@@ -1,7 +1,7 @@
 {
   "url": "https://thaddeusjiang.github.io/tw5-vega-lite",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2-prerelease",
   "scripts": {
     "reset": "rimraf ./**/node_modules",
     "clean": "rimraf dist",

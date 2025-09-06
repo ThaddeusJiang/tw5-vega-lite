@@ -23,12 +23,12 @@ Drag and drop the following tiddlers into your wiki: <<tag $:/plugins/ThaddeusJi
 !!! 2. widget
 
 ```wikitext
-<$vega-lite spec="seattle-weather.json" />
+<$vega-lite spec={{seattle-weather.json}} />
 ```
 
 !!! 3. result
 
-<$vega-lite spec="seattle-weather.json" />
+<$vega-lite spec={{seattle-weather.json}} />
 
 !! Links
 
